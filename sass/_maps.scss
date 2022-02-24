@@ -1,0 +1,19 @@
+/*
+MAPS
+
+
+*/
+
+$bordes: (
+    1: rgb(240, 229, 229),
+    2: rgb(202, 199, 199),
+    3: rgb(233, 197, 197),
+);
+
+/* Lista con Mapa */
+@each $clave, $valor in $bordes {
+    .services#{$clave} {
+        border-color: $valor;
+    }
+}
+

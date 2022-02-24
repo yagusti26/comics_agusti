@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif; }
+
+section {
+  overflow-x: hidden; }
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #ff512f, #860909);
+  --light-gray: rgba(255, 255, 255, 0.877); }
+
+/*
+MAPS
+
+
+*/
+/* Lista con Mapa */
+.services1 {
+  border-color: #f0e5e5; }
+
+.services2 {
+  border-color: #cac7c7; }
+
+.services3 {
+  border-color: #e9c5c5; }
+
+header {
+  background: #ff512f;
+  background: var(--bggradient); }
+  header a {
+    font-family: "Lato", sans-serif;
+    font-size: 0.9em;
+    color: white; }
+  header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1; }
+    header .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block; }
+      header .dropdown-content a:hover {
+        background-color: #ddd; }
+  header .dropdown:hover .dropdown-content {
+    display: block; }
+  header .nav-item:last-child {
+    padding-right: 10.5em; }
+  header .nav-item {
+    padding: 0.9em; }
+  header .navbar-brand {
+    padding-left: 8rem; }
+  header .nav-link:hover {
+    color: #ec0808; }
+  header .row .col-md-7 {
+    padding: 22vmin 1vmin;
+    padding-bottom: 35vmin; }
+  header .row .col-md-5 {
+    padding: 4.2vmin 1vmin; }
+  header .row .col-md-5 img {
+    width: 90%; }
+  header .container .col-md-7 {
+    font-family: "Rubik", sans-serif; }
+  header .container .col-md-7 h6 {
+    padding: 1vmin;
+    letter-spacing: 4px; }
+  header .container .col-md-7 h1 {
+    font-size: 8.5vmin;
+    font-weight: bold;
+    padding: 0.1em 0em; }
+  header .container .col-md-7 p {
+    padding: 1vmin 5vmin; }
+  header .primary-btn {
+    border-radius: 30px;
+    font-weight: bold; }
+
+/*
+MAPS
+
+
+*/
+/* Lista con Mapa */
+.services1 {
+  border-color: #f0e5e5; }
+
+.services2 {
+  border-color: #cac7c7; }
+
+.services3 {
+  border-color: #e9c5c5; }
+
+.services {
+  min-height: 80vh;
+  background: url("/imgs/hell.jpeg") center/cover fixed no-repeat;
+  display: flex;
+  align-items: center; }
+  .services .service .service-icon, .services .service-text h3 .service-icon, .service-text .services h3 .service-icon, .services .service-text p .service-icon, .service-text .services p .service-icon {
+    align-self: center;
+    font-size: 30px;
+    margin-right: 20px;
+    padding: 20px;
+    border: 3px solid #f5f3f5;
+    border-radius: 50%; }
+
+footer {
+  background: #120f0f;
+  overflow-x: hidden;
+  padding: 14vmin 18vmin; }
+  footer p > span {
+    color: #ff512f; }
+  footer input {
+    border: none !important; }
+  footer input::placeholder {
+    color: white !important; }
+  footer .input-group .input-group-text {
+    background: var(--bggradient);
+    border: none; }
+  footer .column i {
+    color: #c55a8a; }
+  footer .column i + i {
+    padding: 0 0.5em; }
+  footer .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+    z-index: 9999;
+    transition: all 1.5s ease; }
+
+/* SMARTPHONE & TABLETS */
+@media only screen and (max-width: 768px) {
+  header .navbar-brand {
+    padding-left: 1rem; }
+  /* Section 3 */
+  .section-3 {
+    height: inherit;
+    padding: 10vmin !important;
+    background-image: linear-gradient(to bottom, #4b4847, #141010); }
+  .section-3 .row h1 {
+    padding: 6vmin 4vmin; }
+  .section-3 .platform .col-md-6 {
+    text-align: center !important; }
+  .section-3 .desktop i {
+    font-size: 8vmin; }
+  footer .row .col-md-2 {
+    margin-top: 8vmin; } }
+
+.about-card {
+  max-width: 50%;
+  border-radius: 30px; }
+  .about-card p {
+    max-width: 70%;
+    margin: 0 auto; }
+
+@media only screen and (max-width: 768px) {
+  .containerForm {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px; }
+  .leftForm {
+    width: 100%;
+    height: 400px; }
+  .rightForm {
+    width: 90%;
+    margin: 0;
+    margin-top: -100px; } }
+
+/*
+EXTENDS Y MIXINS
+*/
+/* EXTENDS */
+.service, .service-text h3, .service-text p {
+  color: #f5f3f5;
+  display: flex;
+  margin: 40px; }
+
+.service-text h3 {
+  text-transform: uppercase; }
+
+.service-text p {
+  line-height: 1.5;
+  margin-top: 5px; }
+
+/* MIXINS */
+.about {
+  align-items: center;
+  justify-content: center; }
+
+.info {
+  width: 100%;
+  height: 100%; }
+
+.about {
+  min-height: 100vh;
+  padding: 100px 0;
+  background: url("/imgs/hellboy.jpg") center/cover fixed no-repeat;
+  display: flex; }
+  .about .about-card {
+    background: rgba(119, 67, 67, 0.6);
+    text-align: center;
+    padding: 60px 40px; }
+    .about .about-card h3 {
+      color: aliceblue;
+      font-size: 40px;
+      text-transform: capitalize; }
+    .about .about-card img {
+      margin: 20px 0; }
+    .about .about-card p {
+      color: aliceblue;
+      line-height: 2; }
+
+.section-1 {
+  padding: 20vmin 0vmin; }
+  .section-1 .row .col-md-6:last-child {
+    position: relative; }
+  .section-1 .row .col-md-6 .panel {
+    position: absolute;
+    top: 7vmin;
+    left: -18vmin;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    padding: 13vmin 5vmin 20vmin 10vmin;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: "Lato", sans-serif;
+    z-index: 1; }
+    .section-1 .row .col-md-6 .panel h1 {
+      font-weight: bold;
+      padding: 0.4em 0;
+      font-size: 2em; }
+    .section-1 .row .col-md-6 .panel p {
+      font-size: 0.9em;
+      color: rgba(0, 0, 0, 0.5); }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+html {
+  font-family: "Montserrat"; }
+
+#contacto {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/imgs/hellboy.jpg");
+  background-color: #1e1f26; }
+  #contacto .containerForm {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #contacto .containerForm .leftForm {
+      width: 50%;
+      height: 600px;
+      background: url("/imgs/header-img.png") no-repeat center/cover;
+      border-radius: 8px; }
+    #contacto .containerForm .rightForm {
+      width: 50%;
+      min-height: 400px;
+      background: rgba(99, 42, 42, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      border-radius: 8px;
+      color: white;
+      margin-left: -150px; }
+      #contacto .containerForm .rightForm h1 {
+        font-size: 40px;
+        font-weight: lighter; }
+      #contacto .containerForm .rightForm p {
+        margin: 20px 0;
+        font-weight: 500;
+        line-height: 25px; }
+      #contacto .containerForm .rightForm a {
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: white;
+        color: black;
+        padding: 20px 30px;
+        display: inline-block;
+        letter-spacing: 2px; }
+
+.features {
+  padding: 2% 2%; }
+  .features h1 {
+    font-size: 4rem;
+    text-align: center;
+    width: fit-content;
+    margin: 4.5rem auto;
+    border-bottom: 5px solid crimson; }
+  .features .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 4rem;
+    justify-items: center; }
+  .features .features-box .product-box {
+    position: relative;
+    overflow: hidden; }
+    .features .features-box .product-box .info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transform-origin: left center;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      place-items: center; }
+    .features .features-box .product-box :hover .info {
+      transform: translate(-50%, -50%) scale(1); }
+    .features .features-box .product-box a {
+      padding: 0.6rem;
+      background-color: crimson;
+      color: #fff;
+      font-size: 1.25rem; }
+  .features .features-box h3 {
+    padding: 1.25rem 0;
+    font-size: 1.8rem; }
+  .features .features-box p {
+    margin: 1.25rem 0;
+    font-size: 1.5rem; }
+    .features .features-box p sup {
+      color: crimson; }
+
+.features {
+  padding: 2% 2%; }
+  .features h1 {
+    font-size: 4rem;
+    text-align: center;
+    width: fit-content;
+    margin: 4.5rem auto;
+    border-bottom: 5px solid crimson; }
+  .features .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 4rem;
+    justify-items: center; }
+  .features .features-box .product-box {
+    position: relative;
+    overflow: hidden; }
+    .features .features-box .product-box .info {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      transform-origin: left center;
+      display: grid;
+      place-items: center; }
+    .features .features-box .product-box :hover .info {
+      transform: translate(-50%, -50%) scale(1); }
+    .features .features-box .product-box a {
+      padding: 0.6rem;
+      background-color: crimson;
+      color: #fff;
+      font-size: 1.25rem; }
+  .features .features-box h3 {
+    padding: 1.25rem 0;
+    font-size: 1.8rem; }
+  .features .features-box p {
+    margin: 1.25rem 0;
+    font-size: 1.5rem; }
+    .features .features-box p sup {
+      color: crimson; }

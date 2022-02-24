@@ -1,0 +1,38 @@
+/*
+EXTENDS Y MIXINS
+*/
+
+/* EXTENDS */
+.service {
+    color: #f5f3f5;
+    display: flex;
+    margin: 40px;
+}
+.service-text h3 {
+    @extend .service;
+    text-transform: uppercase;
+}
+.service-text p {
+    @extend .service;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+/* MIXINS */
+@mixin lugar ($aligni, $alignt) {
+    align-items: $aligni;
+    justify-content: $alignt;
+}
+// QUIENES SOMOS PAGE
+.about {
+    @include lugar(center, center )
+}
+
+// MANGAS PAGE
+@mixin tamanio ($anchura, $altura) {
+    width: $anchura;
+    height: $altura;
+}
+.info {
+    @include tamanio(100%, 100% )
+}

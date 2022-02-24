@@ -1,0 +1,36 @@
+// ESTILOS FOOTER
+
+footer {
+  background: #120f0f;
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+  p > span {
+    color: #ff512f;
+  }
+  input {
+    border: none !important;
+  }
+  input::placeholder {
+    color: white !important;
+  }
+  .input-group {
+    .input-group-text {
+      background: var(--bggradient);
+      border: none;
+    }
+  }
+  .column i {
+    color: #c55a8a;
+  }
+  .column i + i {
+    padding: 0 0.5em;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+    z-index: 9999;
+    transition: all 1.5s ease;
+  }
+}

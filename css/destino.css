@@ -1,0 +1,64 @@
+
+
+
+
+
+
+
+/* quienes somos section */
+.about {
+  min-height: 100vh;
+  padding: 100px 0;
+  background: url("/mi-repositorio/imgs/flames.jpeg")center/cover fixed no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-card {
+  background: rgba(136, 115, 115, 0.6);
+  text-align: center;
+  padding: 60px 40px;
+}
+.about-card h3 {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.about-card img {
+  
+  margin: 20px 0;
+}
+.about-card p {
+  line-height: 2;
+}
+
+
+/* TABLETS */
+@media screen and (min-width:776px) {
+  .nav-container {
+      display: none;
+  }
+  nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background: rgba(13, 19, 23, 0.8);
+  }
+  nav ul a {
+      background: transparent;
+  }
+  nav ul a:hover {
+      background: transparent;
+      padding-left: 20px;
+  }
+
+
+  /* quienes somos */
+  .about-card {
+      max-width: 50%;
+      border-radius: 30px;
+  }
+  .about-card p {
+      max-width: 70%;
+      margin: 0 auto;
+  }
+}

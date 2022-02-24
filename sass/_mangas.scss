@@ -1,0 +1,54 @@
+// ESTILOS MANGAS PAGE
+
+.features {
+    padding: 2% 2%;
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        width: fit-content;
+        margin: 4.5rem auto;
+        border-bottom: 5px solid crimson;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 4rem;
+        justify-items: center;
+    }
+    .features-box {
+        .product-box {
+            position: relative;
+            overflow: hidden;
+            .info {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%)scale(0);
+                transform-origin: left center;
+                display: grid;
+                place-items: center;
+            }
+            :hover .info {
+                transform: translate(-50%, -50%)scale(1);
+            }
+            a {
+                padding: 0.6rem;
+                background-color: crimson;
+                color: #fff;
+                font-size: 1.25rem;
+            }
+        }
+        h3 {
+            padding: 1.25rem 0;
+            font-size: 1.8rem;
+        }
+        p {
+            margin: 1.25rem 0;
+            font-size: 1.5rem;
+            sup {
+                color: crimson;
+            }
+        }
+        
+    }
+}

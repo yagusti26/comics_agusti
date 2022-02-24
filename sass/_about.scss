@@ -1,0 +1,27 @@
+// IMPORTS
+@import "extend-mixing";
+// ESTILOS 
+.about {
+    min-height: 100vh;
+    padding: 100px 0;
+    background: url("/imgs/hellboy.jpg")center/cover fixed no-repeat;
+    display: flex;  
+    .about-card {
+        background: rgba(119, 67, 67, 0.6);
+        text-align: center;
+        padding: 60px 40px;
+        h3 {
+            color: aliceblue;
+            font-size: 40px;
+            text-transform: capitalize;
+        }
+        img {
+  
+            margin: 20px 0;
+        }
+        p {
+            color: aliceblue;
+            line-height: 2;
+          }
+      }
+  }

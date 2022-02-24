@@ -1,0 +1,21 @@
+// IMPORTS
+@import "maps";
+
+// ESTILOS SERVICES
+
+.services {
+    min-height: 80vh;
+    background: url("/imgs/hell.jpeg")center/cover fixed no-repeat;
+    display: flex;
+    align-items: center;
+    .service {
+        .service-icon {
+            align-self: center;
+            font-size: 30px;
+            margin-right: 20px;
+            padding: 20px;
+            border: 3px solid #f5f3f5;
+            border-radius: 50%;
+        }
+    }
+}
